@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import {Link} from 'react-router-dom'
+// import navSlide from '.navSlide'
 
 export function Home () {
     return (
 <>
-      <main>
+      
       <body>
     <section class="nav">
     <nav>
@@ -54,9 +55,9 @@ export function Home () {
       </button>
     </section>
     <p>Distraction ACTION</p>
-    <script src="app.js"></script>
+    <script src="/x.js"></script>
   </body>
-      </main>
+     
     </>
     )
   }
