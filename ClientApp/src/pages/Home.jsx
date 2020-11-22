@@ -18,12 +18,12 @@ export function Home () {
         <li><a href="#">About</a></li>
         <li><a href="#">Blog</a></li>
         <li><a href="#">Gallery</a></li>
-        {/* <div class=game-umbrella>
+        <div class="game-umbrella">
           <li><a href="#">Gaming</a></li>
         </div>
-        <li class=game-child><a href="#">Historical</a></li>
-        <li class=game-child><a href="#">Fiction</a></li>
-        <li class=game-child><a href="#">RPGs</a></li> */}
+        <li class="game-child"><a href="#">Historical</a></li>
+        <li class="game-child"><a href="#">Fiction</a></li>
+        <li class="game-child"><a href="#">RPGs</a></li>
       </ul>
 
       <div class="burger">
