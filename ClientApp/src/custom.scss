@@ -1,5 +1,6 @@
 :root {
   font: 16px / 1 sans-serif;
+  /* box-sizing: border-box; */
 }
 
 html {
@@ -9,4 +10,194 @@ html {
 body {
   margin: 0;
   min-height: 100%;
+  text-align: center;
+  background-color: olivedrab;
 }
+
+h1 {
+  background-color: slategrey;
+  padding: 1rem;
+  margin: 0rem;  }
+
+.hero {
+  background-image: url('./images/gameplay.jpg');
+  background-size: cover;
+  height: 100vh;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.hero h2 {
+  /* display: flex; */
+  font-size: 2rem;
+  padding: 1rem;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  background: linear-gradient(
+    rgba(184, 183, 182, 0.75),
+    rgba(50, 52, 53, 0.75)
+  );
+  
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  color: whitesmoke;
+  background-color: lightblue;
+  margin: 0;
+  padding: 1rem;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  }
+
+  nav h2 {
+    letter-spacing: 5px;
+  }
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  list-style: none;
+  border: 1px solid red;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links a {
+  color: whitesmoke;
+  letter-spacing: 2px;
+}
+
+nav li {
+  padding: 1rem;
+  margin: 0;
+}
+
+.game-umbrella {
+  display: none;
+}
+
+/* Burger for mobile */
+
+.burger {
+  display: none;
+}
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: whitesmoke;
+  margin: 5px;
+}
+
+
+
+/* .btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+} */
+
+.options {
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.button {
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 1260px)
+{
+
+.game-umbrella {
+display: contents;
+}
+.game-child {
+  display: none;
+}
+}
+
+@media screen and (max-width: 880px){
+  body {
+    overflow-x: hidden;
+  }
+
+
+  .nav-links {
+    /* display: none; */
+    /* Clickables, for later */
+
+
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 65vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:lightblue;
+    width: 35%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .burger{
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-active {
+    transform: translateX(0%);
+  }
+  
+  @keyframes navLinkFade{
+    from{
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to{
+      opacity: 1;
+      transform: translateX(0px);
+    }
+
+  }
+  .x .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+
+  }
+
+  .x .line2{
+    opacity: 0;
+  }
+
+  .x .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+  }
+
+  
+}
+
+/* @media screen and (max-width: 768px) {
+  .nav li {
+    position: absolute;
+    right: 0px;
+    
+  }
+} */
